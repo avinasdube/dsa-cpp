@@ -1,0 +1,11 @@
+# Ignore the "logs" folder
+logs/
+
+# Ignore all folders named "temp"
+temp/
+.vscode/
+output/
+
+
+# Ignore a specific subfolder
+build/debug/
