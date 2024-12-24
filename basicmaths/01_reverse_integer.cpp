@@ -33,19 +33,15 @@ using namespace std;
 
 int reverseIntegerWithMath(int num)
 {
-    int reversedInteger = 0; // initialize reversedInteger
-    int rem = 0;
+    int reversedInt = 0; // initialize reversedInt with 0
 
     while (num > 0)
     {
-        reversedInteger *= 10;
-        rem = num % 10;         // remainder grabs last digit
-        num = (num - rem) / 10; // eliminate zero in num
-
-        reversedInteger += rem; // push remainder onto end of reversedInteger
+        reversedInt = reversedInt * 10 + num % 10; // storing last digit of num in reversedInt
+        num = num / 10;                            // eliminating the last digit of num
     }
 
-    return reversedInteger;
+    return reversedInt; // returning reversedInteger
 }
 
 int main()
